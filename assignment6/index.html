@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inputbox{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+input{
+width:200px;
+}
+    </style>
+    </head>
+    <body>
+        <form action="" onsubmit="return ValidateAllfields()">
+        <div class="inputbox">
+         <label for="">enter your first name</label>
+         <input type="text" id="fname" value="" onkeyup="ValidateFName()">
+         <p id="warning"></p>
+         <label for="">enter your last name</label>
+            <input type="text" id="lname" value="" onkeyup="ValidateLName()">
+            <p id="warningl"></p>
+            <label for="">enter your Mobile number</label>
+            <input type="text" id="mnum" onblur="ValidateMobNum()">
+            <p id="warning-mob"></p>
+            <label for="">enter your email</label>
+            <input type="text" id="email" onblur="ValidateEmail()">
+            <p id="email-error"></p>
+            <!--<label for="">enter your Password</label>
+            <input type="text" id="Password" onblur="ValidatePassword()">
+            <p id="Password-error"></p>-->
+            <input type="submit">
+        </div>
+        <button onclick="ValidateAllfields()"></button>
+    </form>
+        
+ <script src="script.js"></script>
+    </body>
+    </html>
