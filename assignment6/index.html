@@ -17,28 +17,26 @@ width:200px;
     </style>
     </head>
     <body>
-        <form action="" onsubmit="return ValidateAllfields()">
+        <form action="https://script.google.com/macros/s/AKfycbxOoTNQkhLDd24xkkcH6x6bBtDbxku8uyYJivsQSDvqSBZb3Btq6K1fgAm3MIg5NQLL/exec" method="post" onsubmit"return ValidateAllfields()">
         <div class="inputbox">
          <label for="">enter your first name</label>
-         <input type="text" id="fname" value="" onkeyup="ValidateFName()">
+         <input type="text"id="fname" name="fname" value="" onkeyup="ValidateFName()">
          <p id="warning"></p>
          <label for="">enter your last name</label>
-            <input type="text" id="lname" value="" onkeyup="ValidateLName()">
+            <input type="text"id="lname" name="lname" value="" onkeyup="ValidateLName()">
             <p id="warningl"></p>
             <label for="">enter your Mobile number</label>
-            <input type="text" id="mnum" onblur="ValidateMobNum()">
+            <input type="text"id="mnum" name="mnum" value="" onblur="ValidateMobNum()">
             <p id="warning-mob"></p>
             <label for="">enter your email</label>
-            <input type="text" id="email" onblur="ValidateEmail()">
+            <input type="text"id="email"name="email"value="" onblur="ValidateEmail()">
             <p id="email-error"></p>
-            <!--<label for="">enter your Password</label>
+           <!--<label for="">enter your Password</label>
             <input type="text" id="Password" onblur="ValidatePassword()">
             <p id="Password-error"></p>-->
             <input type="submit">
         </div>
-        <button onclick="ValidateAllfields()"></button>
-    </form>
-        
- <script src="script.js"></script>
+        </form>
+         <script src="script.js"></script>
     </body>
     </html>
